@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link WhatsApp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background: linear-gradient(135deg, #0a2463, #1e3c8b, #3a5fc9);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            transform-style: preserve-3d;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+            transform: translateZ(20px);
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card:hover {
+            transform: translateY(-10px) rotateX(5deg) scale(1.03);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .link-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .link-card a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 15px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .link-card a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.3rem;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            transform: translateZ(10px);
+        }
+
+        /* Animasi 3D untuk latar belakang */
+        .bg-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            z-index: -1;
+        }
+
+        .bg-1 {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 10%;
+            transform: translateZ(-100px);
+        }
+
+        .bg-2 {
+            width: 150px;
+            height: 150px;
+            bottom: 15%;
+            right: 10%;
+            transform: translateZ(-150px);
+        }
+
+        .bg-3 {
+            width: 100px;
+            height: 100px;
+            top: 60%;
+            left: 15%;
+            transform: translateZ(-200px);
+        }
+
+        /* Efek kaca untuk beberapa elemen */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .link-card a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen latar belakang 3D -->
+    <div class="bg-element bg-1"></div>
+    <div class="bg-element bg-2"></div>
+    <div class="bg-element bg-3"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>joe</h1>
+            <p>Join Grub WhatsApp aku buat Jualan brainrot kalian sama Join Saluran WhatsApp aku biar ga ketinggalan info Update Stock setiap hari.</p>
+        </div>
+
+        <div class="link-card">
+            <a href="https://chat.whatsapp.com/KL75rz9LWfoBQAbQcyOPbq?mode=wwt" target="_blank">
+                <div class="icon">👥</div>
+                <div>
+                    <div class="title">BLACK MARKET</div>
+                    <div class="subtitle">Bergabung dengan komunitas kami</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://whatsapp.com/channel/0029Vb6gwDZ9WtBzLN7I4j3u" target="_blank">
+                <div class="icon">📢</div>
+                <div>
+                    <div class="title">INFO STOCK/TESTI</div>
+                    <div class="subtitle">Ikuti update terbaru dari kami</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="link-card">
+            <a href="https://wa.me/62882003973487" target="_blank">
+                <div class="icon">💬</div>
+                <div>
+                    <div class="title">Nomor WhatsApp</div>
+                    <div class="subtitle">Real WhatsApp Joe.</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 WhatsApp Links - All rights reserved</p>
+        </div>
+    </div>
+
+    <script>
+        // Efek parallax sederhana untuk meningkatkan kesan 3D
+        document.addEventListener('mousemove', (e) => {
+            const container = document.querySelector('.container');
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            container.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+    </script>
+</body>
+</html>
